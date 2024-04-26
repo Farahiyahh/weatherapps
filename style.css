@@ -1,0 +1,99 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'open sans', sans-serif;
+    background: #222;
+    background-image: url(https://source.unsplash.com/1600x900/?landscape);
+    font-size:100%;
+}
+
+.card {
+    background: #000000d0;
+    color: white;
+    padding: 2em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    margin: 5emm;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button#searchButton {
+    margin: 0.5em;
+    border: 0.3em;
+    height: 2.0em;
+    width: 4.5em;
+    outline: none;
+    background: #7c7c7c2b;
+    color: grey;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+button#searchButton:hover {
+    background:#7c7c7c6b;
+}
+
+input.search-bar {
+    border: none;
+    outline: none;
+    padding: 0.3em 0.3em;
+    border-radius: 2px;
+    background: #7c7c7c2b;
+    color: white;
+    font-family: inherit;
+    font-size: 100%;
+}
+
+.weather.loading{
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+
+}
+
+.weather.loading:after {
+    visibility: visible;
+    content: "Loading...";
+    color:white;
+    position: absolute;
+    top: 0;
+}
+
+hourly-forecast {
+    margin-top: 100px;
+    overflow-x: auto;
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+
+}
+
+.hourly-item {
+    flex: 0 0 auto;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    color: white;
+    flex-direction: row;
+}
+
+.hourly-item img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px;
+}
+
+hourly-heading {
+    color: #fff;
+    margin-top: 10px;
+}
